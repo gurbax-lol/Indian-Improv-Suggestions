@@ -35,25 +35,25 @@
                 <img src="RAMESH.png" alt="" width="144" height="114" style="padding-bottom: 10px;">
                 <hgroup>
                     <h4>RAMESH SUGGESTS</h4>
-                    <h5>Your <span>object</span> is:</h5>
+                    <h5>Your <span class="category"></span> is:</h5>
                 </hgroup>
                 <div>
-                    <h1 style="text-transform: capitalize;"><strong><span id="physical">idli Wada</strong></span></h1>
+                    <h1 style="text-transform: capitalize;"><strong><span id="suggestion"></strong></span></h1>
                     <br><br>
                     <div>
-                        <p role="button" onClick="setTraits();">New <span>Object</span></p> <br><br>
+                        <p role="button" onClick="executeIntent();">New <span class="category"></span></p> <br><br>
                     </div>
                     <hr style="padding-bottom: 10px;">
                     <p>Or get another...</p>
                     <div class="grid">
-                        <p class="outline" role="button">Location</p>
-                        <p class="outline" role="button">Activity</p>
-                        <p class="outline" role="button">Relationship</p>
+                        <p class="outline" role="button" onClick="changeIntent('location')">Location</p>
+                        <p class="outline" role="button" onClick="changeIntent('activity')">Activity</p>
+                        <p class="outline" role="button" onClick="changeIntent('profession')">Profession</p>
                     </div>
                     <div class="grid">
-                        <p class="outline" role="button">Object</p>
-                        <p class="outline" role="button">Line</p>
-                        <p class="outline" role="button">Occasion</p>
+                        <p class="outline" role="button" onClick="changeIntent('object')">Object</p>
+                        <p class="outline" role="button" onClick="changeIntent('line')">Line</p>
+                        <p class="outline" role="button" onClick="changeIntent('occasion')">Occasion</p>
                     </div>
                 </div>
             </div>
@@ -104,6 +104,7 @@
             }, timeInt)
         }
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,27 +1,16 @@
-const ALL_PHYSICAL_TRAITS = {
-    "movement speed": ["fast", "slow"],
-    "actions": ["fidgety", "calm, controlled"],
-    "movement": ["legato", "staccato"],
-    "posture": ["upright", "slouching"],
-    "walk": ["uncontrolled", "disciplined", "limp", "stroll", "swagger"],
-    "heavy": ["right", "left"],  // weight distribution
-    "flexibility": ["rubbery", "rigid"],
-    "led movement": ["head", "chest", "belly"],
-    "arms / hands": ["open", "closed"],
-    "shoulders": ["raised", "relaxed"],
-    "fingers": ["spread", "joined", "intertwined"],
-    "body": ["open", "closed"]
-}
+const ALL_LOCATIONS = ["shaadi mandap", "rickshaw stand", "passport office", "cricket stadium",
+    "saarvajanik wedding", "inter-state train", "meditation retreat"]
 
-const ALL_VOCAL_TRAITS = {
-    "accent": ["british", "french", "malayali", "punjabi", "italian", "tapori"],
-    "pitch": ["low", "high"],
-    "talker": ["fast", "slow"],
-    "volume": ["loud", "whispery"],
-    "articulation": ["excellent", "poor"],
-    "jaw": ["tight", "loose"],
-    "tongue": ["active", "lazy"],
-}
+const ALL_ACTIVITIES = ["doodhwala - customer",]
+
+const ALL_PROFESSIONS = ["software engineer", "doctor", "mechanical engineer", "bank officer",
+    "LIC agent", "rickshaw driver", "tantrik", "gundaa / bhai", "ticket checker", "broker", "helper",
+    "typist", "dabbawala", "ear cleaner", "call center rep", "coaching class teacher", "sherpa",
+    "paanwala", "bandwala", "spot boy", "astrologer", "coolie", "shaadi matchmaker", "chaiwala",
+    "street food vendor", "IAS officer", "traffic police", "MLA", "mazdoor", "snake charmer", "dancer",
+    "dhaarwala", "salesman", "cricketer", "bollywood extra", "ISRO scientist", "Swiggy delivery guy",
+    "influencer", "AYUSH doctor", "yoga teacher", "film projectionist", "doodhwala", "spiritual guru"]
+
 
 const ALL_OBJECTS = ["belan", "laddoo", "chappal", "chidiya ghar", "diya", "pani puri",
     "local train", "chaddi", "taaveez", "auto ricksaw", "masala dabba", "dhoti", "saari",
@@ -32,32 +21,71 @@ const ALL_OBJECTS = ["belan", "laddoo", "chappal", "chidiya ghar", "diya", "pani
     "bangles", "bus pass", "tadka pan", "topi", "tazos", "cricket gear", "bindi",
     "talwaar", "pagdi", "chyavanprash"]
 
-
-const ALL_PROFESSIONS = ["software engineer", "doctor", "mechanical engineer", "bank officer",
-    "LIC agent", "rickshaw driver", "tantrik", "gundaa / bhai", "ticket checker", "broker", "helper",
-    "typist", "dabbawala", "ear cleaner", "call center rep", "coaching class teacher", "sherpa",
-    "paanwala", "bandwala", "spot boy", "astrologer", "coolie", "shaadi matchmaker", "chaiwala",
-    "street food vendor", "IAS officer", "traffic police", "MLA", "mazdoor", "snake charmer", "dancer",
-    "dhaarwala", "salesman", "cricketer", "bollywood extra", "ISRO scientist", "Swiggy delivery guy",
-    "influencer", "AYUSH doctor", "yoga teacher", "film projectionist", "doodhwala", "spiritual guru"]
-
-const ALL_LOCATIONS = ["shaadi mandap", "rickshaw stand", "passport office", "cricket stadium",
-    "saarvajanik wedding", "inter-state train", "meditation retreat"]
+const ALL_LINES = ["doodhwala - customer",]
 
 const ALL_OCCASIONS = ["shaadi", "graduation", "Canadian PR", "arranged marriage meeting",]
 
-const ALL_RELATIONSHIPS = ["doodhwala - customer",]
+let intent = "object"
 
-function randomTrait(obj) {
-    let keys = Object.keys(obj);  // All keys in obj
-    randomKey = keys[Math.floor(Math.random() * keys.length)]
-    randomValue = obj[randomKey][Math.floor(Math.random() * obj[randomKey].length)]
-    return `${randomValue} ${randomKey}`;
-};
-
-function setTraits() {
-    document.getElementById("physical").innerHTML = randomTrait(ALL_PHYSICAL_TRAITS);
-    document.getElementById("vocal").innerHTML = randomTrait(ALL_VOCAL_TRAITS);
+function randomItem(arr) {
+    return arr[Math.floor(Math.random() * arr.length)]
 }
 
-setTraits()
+
+function setLocation() {
+    document.querySelectorAll("span.category")[0].innerHTML = "location"
+    document.querySelectorAll("span.category")[1].innerHTML = "Location"
+    document.getElementById("suggestion").innerHTML = randomItem(ALL_LOCATIONS)
+}
+
+function setActivity() {
+    document.querySelectorAll("span.category")[0].innerHTML = "activity"
+    document.querySelectorAll("span.category")[1].innerHTML = "Activity"
+    document.getElementById("suggestion").innerHTML = randomItem(ALL_ACTIVITIES)
+}
+
+function setProfession() {
+    document.querySelectorAll("span.category")[0].innerHTML = "profession"
+    document.querySelectorAll("span.category")[1].innerHTML = "Profession"
+    document.getElementById("suggestion").innerHTML = randomItem(ALL_PROFESSIONS)
+}
+function setObject() {
+    document.querySelectorAll("span.category")[0].innerHTML = "object"
+    document.querySelectorAll("span.category")[1].innerHTML = "Object"
+    document.getElementById("suggestion").innerHTML = randomItem(ALL_OBJECTS)
+}
+
+function setLine() {
+    document.querySelectorAll("span.category")[0].innerHTML = "line"
+    document.querySelectorAll("span.category")[1].innerHTML = "Line"
+    document.getElementById("suggestion").innerHTML = randomItem(ALL_LINES)
+}
+
+function setOccasion() {
+    document.querySelectorAll("span.category")[0].innerHTML = "occasion"
+    document.querySelectorAll("span.category")[1].innerHTML = "Occasion"
+    document.getElementById("suggestion").innerHTML = randomItem(ALL_OCCASIONS)
+}
+
+function changeIntent(str) {
+    intent = str
+    executeIntent()
+}
+
+function executeIntent() {
+    if (intent == "location") {
+        setLocation()
+    } else if (intent == "activity") {
+        setActivity()
+    } else if (intent == "profession") {
+        setProfession()
+    } else if (intent == "object") {
+        setObject()
+    } else if (intent == "line") {
+        setLine()
+    } else if (intent == "occasion") {
+        setOccasion()
+    }
+}
+
+executeIntent()
