@@ -17,61 +17,64 @@
     <link rel="stylesheet" href="colorscheme.css">
 </head>
 
-<body>
-    <header class="container">
+<body class="container">
+    <header>
         <nav>
             <ul>
-                <li><strong>RAMESH</strong></li>
+                <li><strong>Indian Improv Suggestions</strong></li>
             </ul>
             <ul>
-                <li><a href="#">Add Your Own</a></li>
-                <li><a href="#">About</a></li>
                 <li><a href="#" id="theme_switcher"></a></li>
+                <li><a role="button" class="outline" href="#">+ Install</a></li>
             </ul>
         </nav>
     </header>
-    <main class="container">
+    <main>
         <article style="text-align: center; max-width: 800px; margin: 0 auto;">
             <div>
-                <img src="RAMESH.png" alt="" width="144" height="114">
+                <img src="RAMESH.png" alt="" width="144" height="114" style="padding-bottom: 10px;">
                 <hgroup>
-                    <h1>Ramesh Suggests</h1>
-                    <h5>Your <span>object</span> is:</h5><br>
+                    <h4>RAMESH SUGGESTS</h4>
+                    <h5>Your <span>object</span> is:</h5>
                 </hgroup>
                 <div>
-                    <h2 style="text-transform: capitalize;"><strong><span id="physical">idli Wada</strong></span></h2>
+                    <h1 style="text-transform: capitalize;"><strong><span id="physical">idli Wada</strong></span></h1>
                     <br><br>
                     <div>
-                        <p role="button" onClick="setTraits();">New Suggestion</p> <br><br>
+                        <p role="button" onClick="setTraits();">New <span>Object</span></p> <br><br>
                     </div>
-                    <h3>Get another...</h3>
+                    <hr style="padding-bottom: 10px;">
+                    <p>Or get another...</p>
                     <div class="grid">
-                        <p class="secondary outline" role="button">Object</p>
-                        <p class="secondary outline" role="button">Location</p>
-                        <p class="secondary outline" role="button">Relationship</p>
+                        <p class="outline" role="button">Location</p>
+                        <p class="outline" role="button">Activity</p>
+                        <p class="outline" role="button">Relationship</p>
                     </div>
                     <div class="grid">
-                        <p class="secondary outline" role="button">Activity</p>
-                        <p class="secondary outline" role="button">Line</p>
-                        <p class="secondary outline" role="button">Character</p>
+                        <p class="outline" role="button">Object</p>
+                        <p class="outline" role="button">Line</p>
+                        <p class="outline" role="button">Occasion</p>
                     </div>
                 </div>
             </div>
         </article>
-        <br><br><br>
-        <footer style="text-align: end;">
-
-            <p>©
-                <script type="text/javascript">
-                    document.write(new Date().getFullYear());
-                </script> Made by <a href="https://gurbax.lol/" target="_blank">Gurbax</a> · <a
-                    href="https://gurbax.lol/contact" target="_blank">Contact</a>
-                <br> <a href="https://github.com/gurbax-lol/CharacterCreator" target="_blank">Source Code</a>, licensed
-                <a href="#" target="_blank">MIT</a>.
-            </p>
-        </footer>
     </main>
 
+    <footer>
+        <p>RAMESH stands for Readily Accessible Manch for Enhancing Spontaneity in Hindi.</p>
+        <p>Thanks to contributions from Assad Khan, Neville Barucha, Sachin Lalwani, and Farzeen Khan. Want to see your
+            name here? Click the button below:</p>
+        <p class="" role="button">Add your suggestion </p>
+
+        <p style="text-align: end;">©
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script> Made by <a href="https://gurbax.lol/" target="_blank">Gurbax</a> · <a href="#"
+                target="_blank">About</a> · <a href="https://gurbax.lol/contact" target="_blank">Contact</a>
+            <br> <a href="https://github.com/gurbax-lol/CharacterCreator" target="_blank">Source Code</a>, License:
+            <a href="#" target="_blank">MIT</a>.
+        </p>
+    </footer>
     <script>
         let isLight = true
         const html = document.documentElement

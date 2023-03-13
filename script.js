@@ -46,7 +46,7 @@ const ALL_LOCATIONS = ["shaadi mandap", "rickshaw stand", "passport office", "cr
 
 const ALL_OCCASIONS = ["shaadi", "graduation", "Canadian PR", "arranged marriage meeting",]
 
-const ALL_RELATIONSHIPS = ["doodhwala - client",]
+const ALL_RELATIONSHIPS = ["doodhwala - customer",]
 
 function randomTrait(obj) {
     let keys = Object.keys(obj);  // All keys in obj
