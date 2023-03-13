@@ -41,11 +41,12 @@ const ALL_PROFESSIONS = ["software engineer", "doctor", "mechanical engineer", "
     "dhaarwala", "salesman", "cricketer", "bollywood extra", "ISRO scientist", "Swiggy delivery guy",
     "influencer", "AYUSH doctor", "yoga teacher", "film projectionist", "doodhwala", "spiritual guru"]
 
-const ALL_LOCATIONS = ["shaadi mandap", "rickshaw stand"]
+const ALL_LOCATIONS = ["shaadi mandap", "rickshaw stand", "passport office", "cricket stadium",
+    "saarvajanik wedding", "inter-state train", "meditation retreat"]
 
-const ALL_OCCASIONS = ["shaadi", "graduation", "Canadian PR"]
+const ALL_OCCASIONS = ["shaadi", "graduation", "Canadian PR", "arranged marriage meeting",]
 
-const ALL_RELATIONSHIPS = []
+const ALL_RELATIONSHIPS = ["doodhwala - client",]
 
 function randomTrait(obj) {
     let keys = Object.keys(obj);  // All keys in obj
