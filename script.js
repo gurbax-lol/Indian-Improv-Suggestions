@@ -40,7 +40,7 @@ const ALL_LINES = ["yeh baburao ka style hai!", "mujhe geeli pappi do", "tu jaan
 
 // const ALL_OCCASIONS = ["shaadi", "graduation", "Canadian PR", "arranged marriage meeting",]
 
-const ALL_LOCATIONS = ALL_ACTIVITIES = ALL_OCCASIONS = ["Hello, this is still under development. Please select either a proffesion, object, or line."]
+const ALL_LOCATIONS = ALL_ACTIVITIES = ALL_OCCASIONS = ["Hello, this is still under development. Please select either a profession, object, or line."]
 let intent = "object"
 
 function randomItem(arr) {
