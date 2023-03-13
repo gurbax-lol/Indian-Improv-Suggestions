@@ -21,7 +21,22 @@ const ALL_OBJECTS = ["belan", "laddoo", "chappal", "chidiya ghar", "diya", "pani
     "bangles", "bus pass", "tadka pan", "topi", "tazos", "cricket gear", "bindi",
     "talwaar", "pagdi", "chyavanprash"]
 
-const ALL_LINES = ["doodhwala - customer",]
+const ALL_LINES = ["yeh baburao ka style hai!", "mujhe geeli pappi do", "tu jaanta hai mera baap kaun hai?",
+    "toh main kya karun, naachun?", "main tumhaare bachche ki maa bann ne waali hun!",
+    "zindagi jhandwa fir bhi ghamandwa", "aaj mere paas bungla, gaadi, bank balance hai. tumhare paas kya hai?",
+    "utha le re baba", "ek chutki sindoor ki keemat, tum kya jaano!", "bade bade deshon mein, aisi choti choti baaten hoti rehti hain",
+    "yeh shaadi nahin ho sakti!", "yaa dosti geheri hai, yaa yeh photo 3D hai", "aaj pooja, kal koi dooja",
+    "Life is a race", "Jahapana tussi great ho, tofa kabool karo", "millimeter ab centimeter ban gaya hai",
+    "tere chumme me chyavanprash hai", "main hoon ha", "naach na jaane aangan teda", "woh bole toh, apun tumse love karta hai",
+    "main apni favorite hoon", "thappad se darr nahin lagta, pyaar se lagta hai", "main toh dil se bhi hun sarfira",
+    "beta, tumse na ho payega", "dosti aur ladki mein hamesha ladki jeetti hai", "How's the josh?",
+    "Apna time aayega", "Zindagi badi honi chahiye, lambi nahin", "tere naam ka kutta paalun", "Bade achche lagte hain",
+    "Aankhen nikal ke gotiyan khelta hun main", "Haar kar jeetne waale ko baazigar kehte hain", "picture abhi baaki hai mere dost",
+    "ek baar jo maine commitment kar di, toh main apne aap ki bhi nahin sunta", "Tension kaiko lene ka?",
+    "aap purush hi nahin, mahapurush hain", "ghantaa", "Mogambo khush hua", "Ladka aur ladki kabhi dost nahin ho sakte",
+    "Hum nahin sudhrenge", "Pachis din mein paisa double", "Imaandari se zyada zaroori hai dukaandari",
+    "galat waqt par, galat wajeh se, galat jagah pe haath utha diya",
+    "mere saamne waali khidki mein ek chaand ka tukda rehta hai", "Mere pitaji bahut bade shikaari the"]
 
 const ALL_OCCASIONS = ["shaadi", "graduation", "Canadian PR", "arranged marriage meeting",]
 
