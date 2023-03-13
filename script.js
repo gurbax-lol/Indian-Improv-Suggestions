@@ -1,7 +1,7 @@
-const ALL_LOCATIONS = ["shaadi mandap", "rickshaw stand", "passport office", "cricket stadium",
-    "saarvajanik wedding", "inter-state train", "meditation retreat"]
+// const ALL_LOCATIONS = ["shaadi mandap", "rickshaw stand", "passport office", "cricket stadium",
+// "saarvajanik wedding", "inter-state train", "meditation retreat"]
 
-const ALL_ACTIVITIES = ["doodhwala - customer",]
+// const ALL_ACTIVITIES = ["doodhwala - customer",]
 
 const ALL_PROFESSIONS = ["software engineer", "doctor", "mechanical engineer", "bank officer",
     "LIC agent", "rickshaw driver", "tantrik", "gundaa / bhai", "ticket checker", "broker", "helper",
@@ -38,8 +38,9 @@ const ALL_LINES = ["yeh baburao ka style hai!", "mujhe geeli pappi do", "tu jaan
     "galat waqt par, galat wajeh se, galat jagah pe haath utha diya",
     "mere saamne waali khidki mein ek chaand ka tukda rehta hai", "Mere pitaji bahut bade shikaari the"]
 
-const ALL_OCCASIONS = ["shaadi", "graduation", "Canadian PR", "arranged marriage meeting",]
+// const ALL_OCCASIONS = ["shaadi", "graduation", "Canadian PR", "arranged marriage meeting",]
 
+const ALL_LOCATIONS = ALL_ACTIVITIES = ALL_OCCASIONS = ["Hello, this is still under development. Please select either a proffesion, object, or line."]
 let intent = "object"
 
 function randomItem(arr) {
